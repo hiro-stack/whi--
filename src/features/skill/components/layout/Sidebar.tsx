@@ -1,5 +1,6 @@
 import { css } from "@emotion/react";
 import { BarChart, Search } from "@mui/icons-material";
+import SchoolIcon from "@mui/icons-material/School";
 import TaskIcon from "@mui/icons-material/Task";
 import { useNavigate } from "react-router-dom";
 import SDSAnnotation from "./sds/SDSAnnotation";
@@ -107,6 +108,16 @@ export default function Sidebar() {
                                         navigate("/admin/skill/submit");
                                     }}
                                 ></SDSButton>
+                                <SDSButton
+                                    title="研修内容推薦"
+                                    variant="dark"
+                                    align="left"
+                                    icon={<SchoolIcon />}
+                                    onClick={() => {
+                                        navigate("/admin/skill/recommend");
+                                    }}
+                                ></SDSButton>
+
                                 <SDSLabel
                                     title="学習用"
                                     variant="dark"

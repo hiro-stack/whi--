@@ -6,6 +6,7 @@ import AdminSkillDetailPage from "./features/skill/pages/admin/AdminSkillDetailP
 import AdminSkillListPage from "./features/skill/pages/admin/AdminSkillListPage";
 import AdminSkillSubmitPage from "./features/skill/pages/admin/AdminSkillSubmitPage";
 import CatchUpTrainingPage from "./features/training/pages/CatchUpTrainingPage";
+import AdminEmployeeRecommendPage from "./features/skill/pages/admin/AdminTrainingRecommend";
 
 function InnerApp() {
     const router = createBrowserRouter([
@@ -29,6 +30,11 @@ function InnerApp() {
         {
             path: "/admin/skill/submit",
             element: <AdminSkillSubmitPage />,
+        },
+        {
+            path: "/admin/skill/recommend",
+            element: <AdminEmployeeRecommendPage />,
+
         },
         /* 課題用ページ */
         {

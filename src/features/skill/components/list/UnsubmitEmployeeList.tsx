@@ -3,7 +3,6 @@ import { useState } from "react";
 import { useSkillEmployeeList } from "../../api/useSkillEmployeeList";
 import { EmployeeListContent } from "./ErrorEmployeeListContent";
 
-
 export const UnsubmitEmployeeList = () => {
     const [pageNo] = useState<number>(1);
     const [pageRows] = useState<number>(1000);
